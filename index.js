@@ -28,7 +28,7 @@ const prependCat = (n) => {
 };
 
 const removeLastCat = () => {
-  const y = cats.slice(0, cats.length0 - 1);
+  const y = cats.slice(0, cats.length - 1);
   return y;
 };
 
@@ -36,3 +36,7 @@ const removeFirstCat = () => {
   const y = cats.slice(1);
   return y;
 };
+
+const haha = removeFirstCat();
+
+console.log(haha);
