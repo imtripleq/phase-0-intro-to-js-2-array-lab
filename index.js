@@ -1,12 +1,12 @@
 // Write your solution here!
 const cats = ["Milo", "Otis", "Garfield"];
 
-const destructivelyAppendCat = () => {
-  cats.push("Ralph");
+const destructivelyAppendCat = (pet) => {
+  cats.push(pet);
 };
 
-const destructivelyPrependCat = () => {
-  cats.unshift("Bob");
+const destructivelyPrependCat = (pet) => {
+  cats.unshift(pet);
 };
 
 const destructivelyRemoveLastCat = () => {
@@ -18,19 +18,17 @@ const destructivelyRemoveFirstCat = () => {
 };
 
 const appendCat = (n) => {
-  const y = cats.slice();
-  y.push(n);
+  const y = [...cats, n];
   return y;
 };
 
 const prependCat = (n) => {
-  const y = cats.slice();
-  y.unshift(n);
+  const y = [n, ...cats];
   return y;
 };
 
 const removeLastCat = () => {
-  const y = cats.slice(0, 2);
+  const y = cats.slice(0, cats.length0 - 1);
   return y;
 };
 
